@@ -1,7 +1,7 @@
 const MongoClient = require('mongodb').MongoClient;
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Substitua <username>, <password> e <your-cluster-url> pelas suas credenciais e URL do cluster
 const uri = "mongodb+srv://lake:j5MmLYA4G5NzNV4g@cluster0.9adjqij.mongodb.net/test?retryWrites=true&w=majority";
